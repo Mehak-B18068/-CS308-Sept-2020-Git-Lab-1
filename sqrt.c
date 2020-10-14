@@ -11,7 +11,7 @@ positive number. */
 int main(int argc, char* argv[]) {
 	//If No input
 	if (argc != 2) {
-		printf("Usage: sqrt input\n\n");
+		printf("NEGSUPPORT:Usage: sqrt input\n\n");
 		exit(-1);
 	}
 	
@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
     	{
         if (isalpha(userInputStr[x]))
         {
-            printf("invalid:Not a Number\n");
+            printf("NEGSUPPORT:invalid:Not a Number\n");
 		exit(-1);
         }
 
@@ -36,10 +36,10 @@ int main(int argc, char* argv[]) {
 		exit(-1);
 	}*/
 	if(input<0)
-	printf("Sqrt of %d is %.3fi\n",input,sqrt(abs(input)));
+	printf("NEGSUPPORT:Sqrt of %d is %.3fi\n",input,sqrt(abs(input)));
 	else
-	printf("Sqrt of %d is %.3f\n",input,sqrt(input));
-	printf("End of program. Exiting.\n");
+	printf("NEGSUPPORT:Sqrt of %d is %.3f\n",input,sqrt(input));
+	printf("NEGSUPPORT:End of program. Exiting.\n");
 	return(0);
 
 } // end main
