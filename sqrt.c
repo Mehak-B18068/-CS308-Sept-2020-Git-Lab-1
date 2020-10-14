@@ -21,7 +21,7 @@ int main(int argc, char* argv[]) {
 	userInputStr = argv[1];
     	for ( int x = 0;userInputStr[x]!='\0' ; x++)
     	{
-        if (!isdigit(userInputStr[x]))
+        if (isalpha(userInputStr[x]))
         {
             printf("invalid input\n\n");
 		exit(-1);
@@ -30,12 +30,15 @@ int main(int argc, char* argv[]) {
     	}
 	int input = atoi(argv[1]);
 	//Checking for negative number
-	if(input<0)
+	/*if(input<0)
 	{
 	printf("NaN\n");
 		exit(-1);
-	}
-	printf("Sqrt of %d is %f\n",input,sqrt(input));
+	}*/
+	if(input<0)
+	printf("Sqrt of %d is %.3fi\n",input,sqrt(abs(input)));
+	else
+	printf("Sqrt of %d is %.3f\n",input,sqrt(input));
 	printf("End of program. Exiting.\n");
 	return(0);
 
