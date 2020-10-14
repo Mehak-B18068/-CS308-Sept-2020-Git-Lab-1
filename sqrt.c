@@ -29,7 +29,12 @@ int main(int argc, char* argv[]) {
 
     	}
 	int input = atoi(argv[1]);
-	
+	//Checking for negative number
+	if(input<0)
+	{
+	printf("NaN\n");
+		exit(-1);
+	}
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
 	printf("End of program. Exiting.\n");
 	return(0);
