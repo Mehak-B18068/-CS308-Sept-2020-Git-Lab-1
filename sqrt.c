@@ -24,7 +24,8 @@ int main(int argc, char* argv[]) {
         if (isalpha(userInputStr[x]))
         {
             printf("Invalid input.NaN\n");
-		exit(-1);
+
+          	exit(-1);
         }
 
     	}
