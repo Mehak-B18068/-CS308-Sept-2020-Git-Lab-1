@@ -23,7 +23,7 @@ int main(int argc, char* argv[]) {
     	{
         if (isalpha(userInputStr[x]))
         {
-            printf("invalid input\n\n");
+            printf("invalid:Not a Number\n");
 		exit(-1);
         }
 
